@@ -1,0 +1,1 @@
+export type BackupErrorCode = 'INVALID_JSON' | 'INVALID_FORMAT' | 'UNSUPPORTED_VERSION';

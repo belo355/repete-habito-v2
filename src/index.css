@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Avenir Next', Avenir, 'Trebuchet MS', system-ui, sans-serif;
+
+  --color-brand-50: #fff4e5;
+  --color-brand-100: #ffe3bf;
+  --color-brand-500: #fc8c03;
+  --color-brand-600: #d97700;
+  --color-brand-700: #9a5200;
+
+  --color-success-50: #e7f9e9;
+  --color-success-500: #2bd93d;
+  --color-success-700: #137a20;
+
+  --color-danger-50: #fdeceb;
+  --color-danger-600: #c52a20;
+  --color-danger-700: #9e1f17;
+
+  --color-heat-1: #c96f00;
+  --color-heat-2: #9a5200;
+  --color-heat-3: #7a3f00;
+  --color-heat-4: #5c2e00;
+
+  --color-surface: #f5f3f0;
+  --color-card: #ffffff;
+  --color-ink: #2b2622;
+  --color-ink-muted: #645b53;
+  --color-line: #e3ded7;
+
+  --radius-card: 16px;
+  --radius-control: 12px;
+
+  --shadow-soft: 0 12px 32px -12px rgb(43 38 34 / 0.18);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    @apply min-h-dvh bg-surface font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-700;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

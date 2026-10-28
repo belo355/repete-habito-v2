@@ -1,0 +1,16 @@
+export type IconName =
+  | 'check'
+  | 'today'
+  | 'heatmap'
+  | 'list'
+  | 'chevron-left'
+  | 'chevron-right'
+  | 'arrow-up'
+  | 'arrow-down'
+  | 'pencil'
+  | 'trash'
+  | 'download'
+  | 'upload'
+  | 'close'
+  | 'plus'
+  | 'alert';
